@@ -17,3 +17,15 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+body {
+ 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.burgerTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+}

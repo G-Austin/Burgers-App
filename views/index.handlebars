@@ -1,24 +1,29 @@
 <h1>Burger Time!</h1>
 
-<h2>Burgers that need to be devoured.</h2>
+<div class="burgerTable">
+  
+  <h2>Burgers that need to be devoured.</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devourable=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+  <ul>
+    {{#each burgers}}
+      {{#unless devoured}}
+        {{> burgers/burger-block devourable=true}}
+      {{/unless}}
+    {{/each}}
+  </ul>
 
-<h2>Burgers that have been devoured</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devourable=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+
+  <h2>Burgers that have been devoured</h2>
+
+  <ul>
+    {{#each burgers}}
+      {{#if devoured}}
+        {{> burgers/burger-block devourable=false}}
+      {{/if}}
+    {{/each}}
+  </ul>
+</div>
 
 <h2>Add a Burger</h2>
 <form class="create-form">
